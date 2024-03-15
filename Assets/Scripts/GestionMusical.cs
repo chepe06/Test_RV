@@ -7,16 +7,17 @@ public class GestionMusical : MonoBehaviour
 {
     public AudioSource audioSource;
     public Slider slider;
-    public Dropdown dropdown;
+    //public GameObject cubo;
+
+    public TMPro.TMP_Dropdown dropdown;
     public AudioClip[] audioClips;
 
 
-    public void Awake(){
-        dropdown = GetComponent<Dropdown>();
+    public void Start(){
+        //dropdown = cubo.GetComponent<Dropdown>();
     }
     
     public void CambiarVolumen(){
-
         audioSource.volume = slider.value;
     }
 
